@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+@artist = Artist.create!(name: "Cool")
+@wow = @artist.songs.create!(title: "wow")
+@great = @artist.songs.create!(title: "great") 
