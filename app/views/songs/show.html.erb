@@ -1,0 +1,5 @@
+<h1><%= @song.title %></h1>
+
+<p> artist: <%= @song.artist.name %> </p>
+<% @artist = Artist.find_by_id(@song.artist_id) %>
+ <li><%= link_to @artist.name, artist_path(@artist) %></li>
